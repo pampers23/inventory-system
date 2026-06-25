@@ -10,6 +10,7 @@ app.use("/api/auth", require("../routes/userRoutes"));
 app.use("/api/categories", require("../routes/categoriesRoutes"));
 app.use("/api/suppliers", require("../routes/suppliersRoutes"));
 app.use("/api/products", require("../routes/productsRoutes"));
+app.use("/api/inventory", require("../routes/stocksRoutes"));
 app.use(require("../middleware/error"));
 
 module.exports = app;
