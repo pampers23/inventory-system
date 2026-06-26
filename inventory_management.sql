@@ -72,4 +72,20 @@ ALTER TABLE categories ADD COLUMN user_id INT;
 ALTER TABLE categories ADD CONSTRAINT fk_categories_user 
 FOREIGN KEY (user_id) REFERENCES users(id);
 
-SELECT * FROM categories;
+UPDATE products SET user_id = 1;
+
+ALTER TABLE suppliers ADD COLUMN user_id INT;
+
+ALTER TABLE suppliers ADD CONSTRAINT fk_suppliers_user 
+FOREIGN KEY (user_id) REFERENCES users(id);
+
+SELECT * FROM categories WHERE id = 1;
+
+SELECT * FROM users;
+
+ALTER TABLE products ADD COLUMN user_id INT;
+
+ALTER TABLE products ADD CONSTRAINT fk_products_user 
+FOREIGN KEY (user_id) REFERENCES users(id);
+
+UPDATE products SET user_id = 1;

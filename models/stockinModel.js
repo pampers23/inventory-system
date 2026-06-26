@@ -24,8 +24,8 @@ const StockIn = sequelize.define('StockIn', {
         allowNull: false,
     },
 }, {
-    tableName: 'stock-in',
-    timeStamps: false,
+    tableName: 'stock_in',
+    timestamps: false,
     underscored: true
 })
 

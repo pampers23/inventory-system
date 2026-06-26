@@ -71,7 +71,7 @@ const stockOut = asyncHandler(async (req, res) => {
 
 const getStockInHistory = asyncHandler(async(req, res) => {
     const history = await StockIn.findAll({
-        order: [[ 'createdAt', 'DESC' ]]
+        order: [[ 'date', 'DESC' ]]
     })
 
     res.status(200).json(history);
